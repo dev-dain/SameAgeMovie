@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+html, body {
+  padding: 0;
+  margin: 0;
+}
+* {
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
+  box-sizing: border-box;
+}
+.header, .footer {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e3a70+0,43094f+100 */
+  background: #0e3a70; /* Old browsers */
+  background: -moz-linear-gradient(left,  #0e3a70 0%, #43094f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #0e3a70 0%,#43094f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #0e3a70 0%,#43094f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e3a70', endColorstr='#43094f',GradientType=1 ); /* IE6-9 */
+}
+.main {
+  min-height: 70vh;
+}
+select {
+  max-width: 200px;
+}
+hr {
+  border: 1.5px dashed #000;
+}
+.btn-circle {
+  border-radius: 50%;
+}
+.help {
+  word-break: keep-all;
+  font-size: 15.2px;
+  font-size: 0.95rem;
+}
+.card img {
+  width: calc(100vw - 190px);
+  height: calc(100vw - 120px);
+}
+.modal-box {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  z-index: 10;
+  background-color: rgba(96, 96, 96, 0.5);
+}
+.modal-box .modal-content {
+  width: 50%;
+  height: 200px;
+  transform: translateX(25%), translateY(-50%);
+}
+
+@media (min-width: 576px) {
+  .card img {
+    width: 165px;
+    height: 240px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card img {
+    width: 220px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card img {
+    width: 275px;
+    height: 330px;
+  }
+}
+@media (min-width: 1198px) {
+  .collapse {
+    max-width: 50% !important;
+  }
+  .card img {
+
+    width: 295px;
+    height: 370px;
+  }
+}

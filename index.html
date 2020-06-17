@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Movie</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid py-5 header">
+    <div class="container text-center">
+      <h1 class="text-light font-weight-bold">Same Age Movie</h1>
+      <button type="button" class="btn text-warning bg-dark btn-lg btn-circle">&#9790;</button>
+    </div>
+  </div>
+  <div class="main container justify-content-center">
+    <h3 class="text-center mb-3 font-weight-light">출생년도를 입력하세요</h3>
+    <div class="container d-flex justify-content-center">
+      <button data-toggle="collapse" data-target="#help" 
+      type="button" class="btn btn-info mx-auto">도움말</button>
+    </div>
+    <div class="border rounded collapse text-center help my-3 p-3 w-75 mx-auto" id="help">
+      이 페이지는 당신의 출생년도와 같은 해에 개봉한 영화의 목록을 보여 줍니다.<br>
+      년도를 고르고 보기 버튼을 누르면 결과를 보여 드립니다.<br>
+      도움말을 접으려면 도움말 버튼을 다시 클릭해주세요.
+    </div>
+    <div class="container-fluid sticky-top pt-3 pb-1 bg-white">
+      <div class="form-group d-flex justify-content-center align-content-center">
+        <select class="custom-select w-50" id="year">
+
+        </select>
+        <label class="mx-3 my-1" for="year">년</label>
+        <button type="button" id="resultBtn" class="btn btn-primary">보기</button>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <ul class="my-3 list-group list-group-flush text-center">
+
+      </ul>
+    </div>
+  </div>
+  <footer class="footer text-light pt-3 d-flex justify-content-center align-content-center">
+    <p>Dain Kim © 2020</p>
+  </footer>
+  <script src="main.js"></script>
+  <script src="key.js"></script>
+</body>
+
+</html>
