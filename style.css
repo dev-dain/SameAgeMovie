@@ -16,18 +16,9 @@ html, body {
   background: linear-gradient(to right,  #0e3a70 0%,#43094f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e3a70', endColorstr='#43094f',GradientType=1 ); /* IE6-9 */
 }
-.main {
-  min-height: 70vh;
-}
-select {
-  max-width: 200px;
-}
-hr {
-  border: 1.5px dashed #000;
-}
-.btn-circle {
-  border-radius: 50%;
-}
+.main { min-height: 75vh; }
+select { max-width: 200px; }
+hr { border: 1.5px dashed #000; }
 .help {
   word-break: keep-all;
   font-size: 15.2px;
@@ -49,34 +40,10 @@ hr {
   height: 200px;
   transform: translateX(25%), translateY(-50%);
 }
+.table { word-break: keep-all; }
 
-@media (min-width: 576px) {
-  .card img {
-    width: 165px;
-    height: 240px;
-  }
-}
-
-@media (min-width: 768px) {
-  .card img {
-    width: 220px;
-    height: 300px;
-  }
-}
-
-@media (min-width: 992px) {
-  .card img {
-    width: 275px;
-    height: 330px;
-  }
-}
 @media (min-width: 1198px) {
   .collapse {
     max-width: 50% !important;
-  }
-  .card img {
-
-    width: 295px;
-    height: 370px;
   }
 }

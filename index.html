@@ -15,11 +15,8 @@
 </head>
 
 <body>
-  <div class="jumbotron jumbotron-fluid py-5 header">
-    <div class="container text-center">
-      <h1 class="text-light font-weight-bold">Same Age Movie</h1>
-      <button type="button" class="btn text-warning bg-dark btn-lg btn-circle">&#9790;</button>
-    </div>
+  <div class="jumbotron jumbotron-fluid py-5 header text-center">
+    <h1 class="text-light font-weight-bold">Same Age Movie</h1>
   </div>
   <div class="main container justify-content-center">
     <h3 class="text-center mb-3 font-weight-light">출생년도를 입력하세요</h3>
@@ -34,18 +31,21 @@
     </div>
     <div class="container-fluid sticky-top pt-3 pb-1 bg-white">
       <div class="form-group d-flex justify-content-center align-content-center">
-        <select class="custom-select w-50" id="year">
-
-        </select>
+        <select class="custom-select w-50" id="year"></select>
         <label class="mx-3 my-1" for="year">년</label>
         <button type="button" id="resultBtn" class="btn btn-primary">보기</button>
       </div>
     </div>
     <hr>
-    <div>
-      <ul class="my-3 list-group list-group-flush text-center">
-
-      </ul>
+    <div id="tableContainer">
+      <table class="my-3 table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th>제목</th>
+            <th>감독</th>
+          </tr>
+        </thead>
+      </table>
     </div>
   </div>
   <footer class="footer text-light pt-3 d-flex justify-content-center align-content-center">
