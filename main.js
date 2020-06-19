@@ -92,7 +92,7 @@ function fetchData() {
   let filmItem, filmDirector;
   tBody.innerHTML = '';
   pagination.innerHTML = '';
-  fetch(`http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=${myKey}&curPage=${curPageIdx}&itemPerPage=${LIST_ITEM_CNT}&openStartDt=${year}&openEndDt=${year}`)
+  fetch(`https://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=${myKey}&curPage=${curPageIdx}&itemPerPage=${LIST_ITEM_CNT}&openStartDt=${year}&openEndDt=${year}`)
     .then((res) => res.json())
     .then((data) => {
       totCnt = data.movieListResult.totCnt;
