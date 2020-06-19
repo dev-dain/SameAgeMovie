@@ -1,0 +1,20 @@
+(!!!) 실제로 실습할 때는 반드시 오픈 키를 받고, openkey 파일의 myKey를 자기 key로 대체할 것
+
+
+listItemCnt = 10 (고정. 목록에 들어갈 tr 개수)
+pageCnt = pagination 한 줄에 들어갈 페이지 개수 (고정. 5)
+totCnt = resultBtn 입력 시 정해짐
+
+curPageidx = resultBtn 입력 시 1
+lastPageIdx = totCnt에 의해 정해지는 마지막 페이지. Math.ceil(totCnt / 10);. resultBtn 입력 시 정해짐
+curListIdx = resultBtn 입력 시 0. 현재 List index. 최대 lastListIdx까지 가능
+lastListIdx = lastPageIdx에 의해 정해지는 마지막 리스트 값. Math.floor(lastPageIDx / pageCnt). resultBtn 입력 시 정해짐
+
+Previous = resultBtn 입력 시 disabled. 기본적으로 idx-- if (idx === (curListidx * pageCnt) + 1) 이라면 curListIdx--
+Next = idx === lastPageIdx 시 disabled. 기본적으로 idx++ if (idx === (curListidx * (pageCnt+1)) 이라면 curListIdx++
+< = resultBtn 입력 시 disabled. curListIdx -= 1. idx = (curListIdx * pageCnt) + 1
+<< = resultBtn 입력 시 disabled. curListIdx = 0으로 만듦. idx = 1
+> = curList === lastListIdx 시 disabled. curListIdx += 1. idx = (curListIdx * pageCnt) + 1.
+>> = curList === lastListIdx 시 disabled. curListIdx === lastListIdx로 만듦. idx = (lastListIdx * pageCnt) + 1
+if curList === lastListIdx 시 lastPageIdx / pageCnt를 해서 for문의 루프 수를 바꿔야 함. (페이지 개수 조절)
+if idx === lastPageIdx 시 totCnt % listItemCnt 해서 for문의 루프 수를 바꿔야 함. (tr 개수 조절)
